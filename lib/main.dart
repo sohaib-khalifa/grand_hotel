@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:grand_hotel/features/onboarding/screens/splash_screen.dart';
+import 'package:grand_hotel/features/booking_flow/screens/request_to_book_screen.dart';
 
 void main() {
   runApp(const GrandHotel());
@@ -21,7 +21,8 @@ class GrandHotel extends StatelessWidget {
           child: child ?? const SizedBox.shrink(),
         );
       },
-      home: const SplashScreen(),
+      // home: const SplashScreen(),
+      home: const RequestToBookScreen(),
     );
   }
 }
