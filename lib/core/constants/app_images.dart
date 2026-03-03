@@ -13,5 +13,5 @@ class AppImages {
 
   // Images
   static const String astonVillHotel = 'assets/images/aston-vill-hotel.png';
-
+  static const String illustrationSvg = 'assets/images/illustration.svg';
 }
