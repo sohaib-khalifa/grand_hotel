@@ -7,6 +7,10 @@ class AppImages {
   static const String calendar2Svg = 'assets/icons/calendar-2.svg';
   static const String callSvg = 'assets/icons/call.svg';
   static const String userSvg = 'assets/icons/user.svg';
+  static const String addCircleSvg = 'assets/icons/add-circle.svg';
+  static const String mastercardSvg = 'assets/icons/mastercard.svg';
+  static const String visaSvg = 'assets/icons/visa.svg';
+
   // Images
   static const String astonVillHotel = 'assets/images/aston-vill-hotel.png';
 
