@@ -1,10 +1,12 @@
 import 'package:calendar_date_picker2/calendar_date_picker2.dart';
 import 'package:flutter/material.dart';
-
 import 'package:grand_hotel/core/constants/app_images.dart';
+import 'package:grand_hotel/core/functions/navigation.dart';
 import 'package:grand_hotel/core/styles/app_color.dart';
 import 'package:grand_hotel/core/styles/app_text_style.dart';
+import 'package:grand_hotel/core/widgets/app_button.dart';
 import 'package:grand_hotel/core/widgets/custom_svg_picture.dart';
+import 'package:grand_hotel/features/booking_flow/screens/checkout_screen.dart';
 import 'package:grand_hotel/features/booking_flow/widgets/circle_icon_button.dart';
 import 'package:grand_hotel/features/booking_flow/widgets/date_card.dart';
 import 'package:grand_hotel/features/booking_flow/widgets/payment_row.dart';
@@ -228,6 +230,8 @@ class _RequestToBookScreenState extends State<RequestToBookScreen> {
           SizedBox(width: 12),
         ],
       ),
+      
+      
       body: Column(
         children: [
           Expanded(
@@ -410,28 +414,41 @@ class _RequestToBookScreenState extends State<RequestToBookScreen> {
 
           // ── Checkout Button ───────────────────────────────────
           Padding(
-            padding: const EdgeInsets.fromLTRB(16, 8, 16, 32),
-            child: SizedBox(
-              width: double.infinity,
-              height: 52,
-              child: ElevatedButton(
-                onPressed: () {},
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: AppColors.primary600,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(14),
-                  ),
-                  elevation: 0,
-                ),
-                child: Text(
-                  'Checkout',
-                  style: AppTextStyles.interBigButton.copyWith(
-                    color: AppColors.white,
-                  ),
-                ),
-              ),
+            padding: const EdgeInsets.fromLTRB(32, 12, 32, 42),
+            child: AppButton(
+              onPressed: () {
+                pushTo(context, CheckoutScreen());
+              },
+              title: 'Checkout',
+              backgroundColor: AppColors.primary600,
             ),
           ),
+
+          // Padding(
+          //   padding: const EdgeInsets.fromLTRB(16, 8, 16, 32),
+          //   child: SizedBox(
+          //     width: double.infinity,
+          //     height: 52,
+          //     child: ElevatedButton(
+          //       onPressed: () {
+          //         pushTo(context, CheckoutScreen());
+          //       },
+          //       style: ElevatedButton.styleFrom(
+          //         backgroundColor: AppColors.primary600,
+          //         shape: RoundedRectangleBorder(
+          //           borderRadius: BorderRadius.circular(14),
+          //         ),
+          //         elevation: 0,
+          //       ),
+          //       child: Text(
+          //         'Checkout',
+          //         style: AppTextStyles.interBigButton.copyWith(
+          //           color: AppColors.white,
+          //         ),
+          //       ),
+          //     ),
+          //   ),
+          // ),
         ],
       ),
     );
