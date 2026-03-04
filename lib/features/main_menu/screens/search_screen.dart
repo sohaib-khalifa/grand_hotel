@@ -21,6 +21,8 @@ class _SearchScreenState extends State<SearchScreen> {
       appBar: AppBar(
         centerTitle: true,
         backgroundColor: AppColors.white,
+        elevation: 0,
+        surfaceTintColor: Colors.transparent,
         leading: IconButton(
           onPressed: () {
             popFrom(context);

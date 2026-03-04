@@ -17,13 +17,11 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppColors.white,
       body: SafeArea(
-        child: SingleChildScrollView(
-          physics: const AlwaysScrollableScrollPhysics(),
-          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              ListTile(
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+              child: ListTile(
                 contentPadding: EdgeInsets.zero,
                 leading: CircleAvatar(
                   radius: 28,
@@ -58,9 +56,7 @@ class HomeScreen extends StatelessWidget {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     IconButton(
-                      onPressed: () {
-                        pushTo(context, SearchScreen());
-                      },
+                      onPressed: () => pushTo(context, SearchScreen()),
                       padding: EdgeInsets.zero,
                       constraints: const BoxConstraints(),
                       icon: SvgPicture.asset(
@@ -71,9 +67,7 @@ class HomeScreen extends StatelessWidget {
                     ),
                     const SizedBox(width: 12),
                     IconButton(
-                      onPressed: () {
-                        pushTo(context, FavouriteScreen());
-                      },
+                      onPressed: () => pushTo(context, FavouriteScreen()),
                       padding: EdgeInsets.zero,
                       constraints: const BoxConstraints(),
                       icon: SvgPicture.asset(
@@ -85,49 +79,61 @@ class HomeScreen extends StatelessWidget {
                   ],
                 ),
               ),
-              const SizedBox(height: 24),
-              const MostPopular(),
-              const SizedBox(height: 24),
-              const RecommendedSection(),
-              SizedBox(height: 24),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    'Hotel Near You',
-                    style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.black,
+            ),
+            Expanded(
+              child: SingleChildScrollView(
+                physics: const AlwaysScrollableScrollPhysics(),
+                padding: const EdgeInsets.symmetric(horizontal: 16),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const SizedBox(height: 14),
+                    const MostPopular(),
+                    const SizedBox(height: 24),
+                    const RecommendedSection(),
+                    const SizedBox(height: 24),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        const Text(
+                          'Hotel Near You',
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.black,
+                          ),
+                        ),
+                        TextButton(
+                          onPressed: () {},
+                          child: const Text(
+                            'See All',
+                            style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.w700,
+                              color: AppColors.primary700,
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
-                  ),
-                  TextButton(
-                    onPressed: () {},
-                    child: Text(
-                      'See All',
-                      style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.w700,
-                        color: AppColors.primary700,
+                    const SizedBox(height: 16),
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(20),
+                      child: Image.asset(
+                        AppImages.map,
+                        width: double.infinity,
+                        height: 180,
+                        fit: BoxFit.cover,
                       ),
                     ),
-                  ),
-                ],
-              ),
-              SizedBox(height: 16),
-              ClipRRect(
-                borderRadius: BorderRadius.circular(20),
-                child: Image.asset(
-                  AppImages.map,
-                  width: double.infinity,
-                  height: 180,
-                  fit: BoxFit.cover,
+                    const SizedBox(height: 24),
+                    const BestScreen(),
+                    const SizedBox(height: 20),
+                  ],
                 ),
               ),
-              SizedBox(height: 24),
-              BestScreen(),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );

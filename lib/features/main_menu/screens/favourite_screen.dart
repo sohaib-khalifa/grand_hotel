@@ -22,6 +22,8 @@ class _FavouriteScreenState extends State<FavouriteScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.white,
+        elevation: 0,
+        surfaceTintColor: Colors.transparent,
         centerTitle: true,
         leading: IconButton(
           onPressed: () {
