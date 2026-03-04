@@ -10,6 +10,7 @@ class AppImages {
   static const String filterSvg = 'assets/icons/filter.svg';
   static const String hourSvg = 'assets/icons/hour.svg';
   static const String sortSvg = 'assets/icons/sort.svg';
+  static const String heartGridSvg = 'assets/icons/heart_grid.svg';
   static const String apartement = 'assets/images/apartement.png';
   static const String heart = 'assets/images/heart.png';
   static const String hotel = 'assets/images/hotel.png';
@@ -24,5 +25,9 @@ class AppImages {
   static const String hotel_7 = 'assets/images/hotel_7.jpg';
   static const String hotel_8 = 'assets/images/hotel_8.jpg';
   static const String hotel_9 = 'assets/images/hotel_9.jpg';
+  static const String hotel_10 = 'assets/images/hotel_10.jpg';
+  static const String hotel_11 = 'assets/images/hotel_11.jpg';
+  static const String hotel_12 = 'assets/images/hotel_12.jpg';
+  static const String hotel_13 = 'assets/images/hotel_13.jpg';
   static const String map = 'assets/images/map.png';
 }

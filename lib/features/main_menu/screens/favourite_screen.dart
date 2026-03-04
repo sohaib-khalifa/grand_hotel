@@ -4,6 +4,8 @@ import 'package:grand_hotel/core/constants/app_images.dart';
 import 'package:grand_hotel/core/functions/navigation.dart';
 import 'package:grand_hotel/core/styles/app_color.dart';
 import 'package:grand_hotel/core/widgets/category_chip.dart';
+import 'package:grand_hotel/features/main_menu/data/product_model.dart';
+import 'package:grand_hotel/features/main_menu/widget/item_favourite.dart';
 
 class FavouriteScreen extends StatefulWidget {
   const FavouriteScreen({super.key});
@@ -124,8 +126,22 @@ class _FavouriteScreenState extends State<FavouriteScreen> {
                   ],
                 ),
               ),
-              SizedBox(height: 24,),
-              
+              SizedBox(height: 24),
+              GridView.builder(
+                shrinkWrap: true,
+                physics: const NeverScrollableScrollPhysics(),
+                padding: EdgeInsets.zero,
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 2,
+                  mainAxisSpacing: 15,
+                  crossAxisSpacing: 15,
+                  childAspectRatio: 0.62,
+                ),
+                itemBuilder: (context, index) {
+                  return ItemFavourite(model: favourite[index]);
+                },
+                itemCount: favourite.length,
+              ),
             ],
           ),
         ),

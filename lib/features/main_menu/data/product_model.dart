@@ -96,28 +96,28 @@ List<ProductModel> bestToday = [
 List<ProductModel> favourite = [
   ProductModel(
     id: '1',
-    image: AppImages.hotel_4,
+    image: AppImages.hotel_10,
     name: 'Eliinate Galian Hotel',
     text: 'Chestnut StreetRome, NY',
     price: '\$248 ',
   ),
   ProductModel(
     id: '2',
-    image: AppImages.hotel_5,
+    image: AppImages.hotel_11,
     name: 'Cerulean Temple Hotel',
     text: 'Chestnut StreetRome, NY',
     price: '\$156',
   ),
   ProductModel(
     id: '3',
-    image: AppImages.hotel_8,
+    image: AppImages.hotel_12,
     name: 'Double Oak Hotel',
     text: 'Chestnut StreetRome, NY',
     price: '\$163',
   ),
   ProductModel(
     id: '4',
-    image: AppImages.hotel_9,
+    image: AppImages.hotel_13,
     name: 'Jade Gem Resort',
     text: 'Chestnut StreetRome, NY',
     price: '\$211',
