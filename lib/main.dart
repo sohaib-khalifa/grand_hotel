@@ -1,7 +1,8 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:grand_hotel/features/booking_flow/screens/request_to_book_screen.dart';
+// import 'package:grand_hotel/features/booking_flow/screens/request_to_book_screen.dart';
+import 'package:grand_hotel/features/main_app/screens/main_app_screen.dart';
 
 void main() {
   runApp(const GrandHotel());
@@ -12,7 +13,7 @@ class GrandHotel extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return  MaterialApp(
       debugShowCheckedModeBanner: false,
       builder: (context, child) {
         return SafeArea(
@@ -22,7 +23,8 @@ class GrandHotel extends StatelessWidget {
         );
       },
       // home: const SplashScreen(),
-      home: const RequestToBookScreen(),
+      // home: const RequestToBookScreen(),
+      home: MainAppScreen(),
     );
   }
 }
