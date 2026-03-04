@@ -1,12 +1,12 @@
 import 'dart:io';
-
 import 'package:flutter/material.dart';
-import 'package:grand_hotel/features/onboarding/screens/splash_screen.dart';
+import 'package:grand_hotel/core/styles/app_themes.dart';
+import 'package:grand_hotel/features/main_menu/screens/main_app_screen.dart';
+import 'package:grand_hotel/features/main_menu/screens/splash_screen.dart';
 
 void main() {
   runApp(const GrandHotel());
 }
-
 class GrandHotel extends StatelessWidget {
   const GrandHotel({super.key});
 
@@ -14,6 +14,7 @@ class GrandHotel extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: AppThemes.light,
       builder: (context, child) {
         return SafeArea(
           top: false,
@@ -21,7 +22,8 @@ class GrandHotel extends StatelessWidget {
           child: child ?? const SizedBox.shrink(),
         );
       },
-      home: const SplashScreen(),
+      // home: const SplashScreen(),
+      home: const MainAppScreen(),
     );
   }
 }
