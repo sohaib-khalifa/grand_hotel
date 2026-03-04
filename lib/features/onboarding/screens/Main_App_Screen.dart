@@ -154,7 +154,7 @@ class _MyBookingScreenState extends State<MyBookingScreen> {
       child: Column(
         children: [
           const SizedBox(height: 8),
-          _SearchBar(hint: "Search...", trailing: const SizedBox()),
+          const _SearchBar(hint: "Search...", trailing: SizedBox()),
           const SizedBox(height: 14),
           Container(
             padding: const EdgeInsets.all(4),
@@ -739,15 +739,148 @@ class _ChatTile extends StatelessWidget {
 }
 
 class ProfileScreen extends StatelessWidget {
-  //TODO: will be implemented
   const ProfileScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Center(
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 16),
+      child: ListView(
+        children: [
+          const SizedBox(height: 10),
+          Row(
+            children: [
+              ClipRRect(
+                borderRadius: BorderRadius.circular(999),
+                child: _netImg(
+                  "https://image2url.com/r2/default/images/1772581600208-9a0d7a5f-e08c-4d53-bcdc-7f7049a64d68.jpg",
+                  w: 52,
+                  h: 52,
+                  fit: BoxFit.cover,
+                ),
+              ),
+              const SizedBox(width: 12),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: const [
+                    Text(
+                      "Mohamed ahmed",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 15,
+                      ),
+                    ),
+                    SizedBox(height: 2),
+                    Text(
+                      "@Mohamed",
+                      style: TextStyle(color: Colors.grey, fontSize: 12),
+                    ),
+                  ],
+                ),
+              ),
+              InkWell(
+                onTap: () {},
+                borderRadius: BorderRadius.circular(10),
+                child: Container(
+                  width: 36,
+                  height: 36,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  child: const Icon(Icons.edit, size: 18),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 18),
+          const Text(
+            "Setting",
+            style: TextStyle(color: Colors.grey, fontSize: 12),
+          ),
+          const SizedBox(height: 10),
+          _ProfileTile(
+            icon: Icons.credit_card,
+            title: "Your Card",
+            onTap: () {},
+          ),
+          _ProfileTile(icon: Icons.security, title: "Security", onTap: () {}),
+          _ProfileTile(
+            icon: Icons.notifications_none,
+            title: "Notification",
+            onTap: () {},
+          ),
+          _ProfileTile(icon: Icons.language, title: "Languages", onTap: () {}),
+          _ProfileTile(
+            icon: Icons.help_outline,
+            title: "Help and Support",
+            onTap: () {},
+          ),
+          const SizedBox(height: 22),
+          Center(
+            child: TextButton(
+              onPressed: () {},
+              child: const Text(
+                "Logout",
+                style: TextStyle(
+                  color: Colors.red,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+          ),
+          const SizedBox(height: 12),
+        ],
+      ),
+    );
+  }
+}
+
+class _ProfileTile extends StatelessWidget {
+  final IconData icon;
+  final String title;
+  final VoidCallback onTap;
+
+  const _ProfileTile({
+    required this.icon,
+    required this.title,
+    required this.onTap,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return InkWell(
+      borderRadius: BorderRadius.circular(14),
+      onTap: onTap,
+      child: Container(
+        padding: const EdgeInsets.symmetric(vertical: 14),
+        decoration: const BoxDecoration(
+          border: Border(
+            bottom: BorderSide(color: Color(0xFFE9E9E9), width: 1),
+          ),
+        ),
+        child: Row(
+          children: [
+            Container(
+              width: 34,
+              height: 34,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: Icon(icon, size: 18),
+            ),
+            const SizedBox(width: 12),
+            Expanded(
       child: Text(
-        "Profile Screen",
-        style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                title,
+                style: const TextStyle(fontWeight: FontWeight.w600),
+              ),
+            ),
+            const Icon(Icons.chevron_right, color: Colors.grey),
+          ],
+        ),
       ),
     );
   }
