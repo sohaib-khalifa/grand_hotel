@@ -873,7 +873,7 @@ class _ProfileTile extends StatelessWidget {
             ),
             const SizedBox(width: 12),
             Expanded(
-      child: Text(
+              child: Text(
                 title,
                 style: const TextStyle(fontWeight: FontWeight.w600),
               ),
