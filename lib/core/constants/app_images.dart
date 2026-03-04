@@ -14,4 +14,9 @@ class AppImages {
   // Images
   static const String astonVillHotel = 'assets/images/aston-vill-hotel.png';
   static const String illustrationSvg = 'assets/images/illustration.svg';
+  static const String jzenklen = 'assets/images/jzenklen.png';
+  static const String kimBorrdy = 'assets/images/kim-borrdy.png';
+  static const String miraiKamazuki = 'assets/images/mirai-kamazuki.png';
+  static const String rezikanAkay = 'assets/images/rezikan-akay.png';
+  static const String rezingkaly = 'assets/images/rezingkaly.png';
 }
