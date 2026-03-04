@@ -49,6 +49,7 @@ class _DetailScreenState extends State<DetailScreen> {
         children: [
           CustomScrollView(
             controller: _scrollController,
+            physics: const ClampingScrollPhysics(),
             slivers: [
               SliverToBoxAdapter(
                 child: Column(
@@ -82,7 +83,7 @@ class _DetailScreenState extends State<DetailScreen> {
                             reviewsSection(),
                             const SizedBox(height: 43),
                             recommendationSection(),
-                            const SizedBox(height: 100),
+                            const SizedBox(height: 50),
                           ],
                         ),
                       ),
@@ -196,8 +197,8 @@ class _DetailScreenState extends State<DetailScreen> {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            const Text(
-              "The Aston Vill Hotel",
+            Text(
+              widget.model.name,
               style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
             ),
             Container(
@@ -224,7 +225,7 @@ class _DetailScreenState extends State<DetailScreen> {
             ),
             const SizedBox(width: 4),
             Text(
-              "Veum Point, Michikoton",
+              widget.model.text,
               style: TextStyle(color: AppColors.grey400, fontSize: 14),
             ),
             const SizedBox(width: 15),
