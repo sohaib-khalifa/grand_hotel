@@ -1,7 +1,6 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
-import 'package:grand_hotel/features/onboarding/screens/splash_screen.dart';
+import 'package:grand_hotel/features/onboarding/screens/Main_App_Screen.dart';
+import 'main_app_screen.dart';
 
 void main() {
   runApp(const GrandHotel());
@@ -12,16 +11,9 @@ class GrandHotel extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      builder: (context, child) {
-        return SafeArea(
-          top: false,
-          bottom: Platform.isAndroid,
-          child: child ?? const SizedBox.shrink(),
-        );
-      },
-      home: const SplashScreen(),
+      home: MainAppScreen(),
     );
   }
 }
