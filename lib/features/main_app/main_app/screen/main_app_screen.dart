@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:grand_hotel/features/main_app/screens/hotel_home_screen.dart';
-import 'package:grand_hotel/features/main_app/screens/messages_screen.dart';
-import 'package:grand_hotel/features/main_app/screens/my_booking_screen.dart';
-import 'package:grand_hotel/features/main_app/screens/profile_screen.dart';
+import 'package:grand_hotel/features/main_app/hotel_home/screen/hotel_home_screen.dart';
+import 'package:grand_hotel/features/main_app/messages/screen/messages_screen.dart';
+import 'package:grand_hotel/features/main_app/my_booking/screen/my_booking_screen.dart';
+import 'package:grand_hotel/features/main_app/profile/screen/profile_screen.dart';
 import 'package:grand_hotel/features/main_app/utils/main_app_constants.dart';
 
 class MainAppScreen extends StatefulWidget {

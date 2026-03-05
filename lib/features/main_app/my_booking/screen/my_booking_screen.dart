@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:grand_hotel/features/main_app/models/booking_item.dart';
+import 'package:grand_hotel/features/main_app/my_booking/widgets/booking_card.dart';
+import 'package:grand_hotel/features/main_app/my_booking/widgets/booking_tab_switcher.dart';
+import 'package:grand_hotel/features/main_app/shared/widgets/app_search_bar.dart';
 import 'package:grand_hotel/features/main_app/utils/main_app_data.dart';
-import 'package:grand_hotel/features/main_app/widgets/app_search_bar.dart';
-import 'package:grand_hotel/features/main_app/widgets/booking_card.dart';
-import 'package:grand_hotel/features/main_app/widgets/booking_tab_switcher.dart';
 
 class MyBookingScreen extends StatefulWidget {
   const MyBookingScreen({super.key});

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:grand_hotel/features/main_app/booking_detail/widgets/info_row.dart';
 import 'package:grand_hotel/features/main_app/models/booking_item.dart';
 import 'package:grand_hotel/features/main_app/utils/image_utils.dart';
 import 'package:grand_hotel/features/main_app/utils/main_app_constants.dart';
-import 'package:grand_hotel/features/main_app/widgets/info_row.dart';
 
 class BookingDetailScreen extends StatelessWidget {
   final BookingItem item;

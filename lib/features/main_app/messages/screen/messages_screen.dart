@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:grand_hotel/features/main_app/messages/widgets/chat_tile.dart';
+import 'package:grand_hotel/features/main_app/shared/widgets/app_search_bar.dart';
 import 'package:grand_hotel/features/main_app/utils/main_app_data.dart';
-import 'package:grand_hotel/features/main_app/widgets/app_search_bar.dart';
-import 'package:grand_hotel/features/main_app/widgets/chat_tile.dart';
 
 class MessagesScreen extends StatelessWidget {
   const MessagesScreen({super.key});
