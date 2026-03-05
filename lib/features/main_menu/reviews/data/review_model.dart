@@ -2,7 +2,7 @@ import 'package:grand_hotel/core/constants/app_images.dart';
 
 class ReviewModel {
   final String name;
-  final String imagePath; 
+  final String imagePath;
   final double rating;
   final String comment;
 
@@ -18,38 +18,44 @@ class ReviewModel {
 final List<ReviewModel> dummyReviews = [
   ReviewModel(
     name: 'Kim Borrdy',
-    imagePath: AppImages.kimBorrdy, 
+    imagePath: AppImages.kimBorrdy,
     rating: 4.5,
-    comment: 'Amazing! The room is good than the picture. Thanks for amazing experience!',
+    comment:
+        'Amazing! The room is good than the picture. Thanks for amazing experience!',
   ),
   ReviewModel(
     name: 'Mirai Kamazuki',
-    imagePath: AppImages.miraiKamazuki, 
+    imagePath: AppImages.miraiKamazuki,
     rating: 5.0,
-    comment: 'The service is on point, and I really like the facilities. Good job!',
+    comment:
+        'The service is on point, and I really like the facilities. Good job!',
   ),
   ReviewModel(
     name: 'Jzenklen',
-    imagePath: AppImages.jzenklen, 
+    imagePath: AppImages.jzenklen,
     rating: 5.0,
-    comment: 'The service is on point, and I really like the facilities. Good job!',
+    comment:
+        'The service is on point, and I really like the facilities. Good job!',
   ),
   ReviewModel(
     name: 'Rezikan Akay',
-    imagePath: AppImages.rezikanAkay, 
+    imagePath: AppImages.rezikanAkay,
     rating: 5.0,
-    comment: 'The service is on point, and I really like the facilities. Good job!',
+    comment:
+        'The service is on point, and I really like the facilities. Good job!',
   ),
   ReviewModel(
     name: 'Rezingkaly',
     imagePath: AppImages.rezingkaly,
     rating: 5.0,
-    comment: 'The service is on point, and I really like the facilities. Good job!',
+    comment:
+        'The service is on point, and I really like the facilities. Good job!',
   ),
   ReviewModel(
     name: 'Andiziky',
-    imagePath: AppImages.jzenklen, 
+    imagePath: AppImages.jzenklen,
     rating: 5.0,
-    comment: 'The service is on point, and I really like the facilities. Good job!',
+    comment:
+        'The service is on point, and I really like the facilities. Good job!',
   ),
 ];
