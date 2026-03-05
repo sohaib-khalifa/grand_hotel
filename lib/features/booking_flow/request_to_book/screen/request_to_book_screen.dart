@@ -1,3 +1,4 @@
+
 import 'package:calendar_date_picker2/calendar_date_picker2.dart';
 import 'package:flutter/material.dart';
 import 'package:grand_hotel/core/constants/app_images.dart';
@@ -6,10 +7,10 @@ import 'package:grand_hotel/core/styles/app_color.dart';
 import 'package:grand_hotel/core/styles/app_text_style.dart';
 import 'package:grand_hotel/core/widgets/app_button.dart';
 import 'package:grand_hotel/core/widgets/custom_svg_picture.dart';
-import 'package:grand_hotel/features/booking_flow/screens/checkout_screen.dart';
-import 'package:grand_hotel/features/booking_flow/widgets/circle_icon_button.dart';
-import 'package:grand_hotel/features/booking_flow/widgets/date_card.dart';
-import 'package:grand_hotel/features/booking_flow/widgets/payment_row.dart';
+import 'package:grand_hotel/features/booking_flow/checkout/screen/checkout_screen.dart';
+import 'package:grand_hotel/features/booking_flow/request_to_book/widgets/circle_icon_button.dart';
+import 'package:grand_hotel/features/booking_flow/request_to_book/widgets/date_card.dart';
+import 'package:grand_hotel/features/booking_flow/request_to_book/widgets/payment_row.dart';
 
 class RequestToBookScreen extends StatefulWidget {
   const RequestToBookScreen({super.key});

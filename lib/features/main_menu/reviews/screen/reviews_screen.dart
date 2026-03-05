@@ -1,12 +1,18 @@
-import 'package:flutter/material.dart';
 
+
+import 'package:flutter/material.dart';
 import 'package:grand_hotel/core/constants/app_images.dart';
-// import 'package:grand_hotel/core/functions/navigation.dart';
 import 'package:grand_hotel/core/styles/app_color.dart';
 import 'package:grand_hotel/core/styles/app_text_style.dart';
 import 'package:grand_hotel/core/widgets/custom_svg_picture.dart';
-import 'package:grand_hotel/features/main_menu/data/review_model.dart';
-import 'package:grand_hotel/features/main_menu/widgets/review_card.dart';
+import 'package:grand_hotel/features/main_menu/reviews/data/review_model.dart';
+import 'package:grand_hotel/features/main_menu/reviews/widgets/review_card.dart';
+// import 'package:grand_hotel/core/constants/app_images.dart';
+// import 'package:grand_hotel/core/styles/app_color.dart';
+// import 'package:grand_hotel/core/styles/app_text_style.dart';
+// import 'package:grand_hotel/core/widgets/custom_svg_picture.dart';
+// import 'package:grand_hotel/features/main_menu/reviews/data/review_model.dart';
+// import 'package:grand_hotel/features/main_menu/reviews/widgets/review_card.dart';
 
 class ReviewsScreen extends StatelessWidget {
   const ReviewsScreen({super.key});
