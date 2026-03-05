@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-
 import 'package:grand_hotel/core/constants/app_images.dart';
 import 'package:grand_hotel/core/functions/navigation.dart';
 import 'package:grand_hotel/core/styles/app_color.dart';
 import 'package:grand_hotel/core/styles/app_text_style.dart';
 import 'package:grand_hotel/core/widgets/app_button.dart';
 import 'package:grand_hotel/core/widgets/custom_svg_picture.dart';
-import 'package:grand_hotel/features/booking_flow/screens/payment_complete_screen.dart';
-import 'package:grand_hotel/features/booking_flow/widgets/payment_option.dart';
+import 'package:grand_hotel/features/booking_flow/payment_complete/screen/payment_complete_screen.dart';
+import 'package:grand_hotel/features/booking_flow/payment_method_bottom_sheet/widgets/payment_option.dart';
+
 
 class PaymentMethodBottomSheet extends StatefulWidget {
   const PaymentMethodBottomSheet({super.key});
@@ -129,9 +129,9 @@ class _PaymentMethodBottomSheetState extends State<PaymentMethodBottomSheet> {
           // ── Confirm and Pay ──
           AppButton(
             onPressed: () {
-                            Navigator.pop(context); // اقفل الـ bottom sheet
+              Navigator.pop(context); // 
               pushTo(context, const PaymentCompleteScreen());
-            } ,
+            },
             title: 'Confirm and Pay',
             backgroundColor: AppColors.primary600,
           ),

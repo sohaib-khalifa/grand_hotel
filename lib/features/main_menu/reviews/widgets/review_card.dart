@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:grand_hotel/core/styles/app_color.dart';
 import 'package:grand_hotel/core/styles/app_text_style.dart';
-import 'package:grand_hotel/features/main_menu/data/review_model.dart';
+import 'package:grand_hotel/features/main_menu/reviews/data/review_model.dart';
 
 class ReviewCard extends StatelessWidget {
   const ReviewCard({super.key, required this.review});

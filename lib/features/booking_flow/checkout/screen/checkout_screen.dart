@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
-
 import 'package:grand_hotel/core/constants/app_images.dart';
 import 'package:grand_hotel/core/functions/navigation.dart';
 import 'package:grand_hotel/core/styles/app_color.dart';
 import 'package:grand_hotel/core/styles/app_text_style.dart';
 import 'package:grand_hotel/core/widgets/app_button.dart';
 import 'package:grand_hotel/core/widgets/custom_svg_picture.dart';
-import 'package:grand_hotel/features/booking_flow/screens/payment_method_bottom_sheet.dart';
-import 'package:grand_hotel/features/booking_flow/widgets/booking_row.dart';
-import 'package:grand_hotel/features/booking_flow/widgets/dashed_divider.dart';
-import 'package:grand_hotel/features/booking_flow/widgets/price_row.dart';
+import 'package:grand_hotel/features/booking_flow/checkout/widgets/booking_row.dart';
+import 'package:grand_hotel/features/booking_flow/checkout/widgets/dashed_divider.dart';
+import 'package:grand_hotel/features/booking_flow/checkout/widgets/price_row.dart';
+import 'package:grand_hotel/features/booking_flow/payment_method_bottom_sheet/screen/payment_method_bottom_sheet.dart';
 
 class CheckoutScreen extends StatelessWidget {
   const CheckoutScreen({super.key});
