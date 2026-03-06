@@ -69,7 +69,7 @@ List<ProductModel> recomanded = [
   ProductModel(
     id: '4',
     image: AppImages.hotel_9,
-    name: 'Sapphire Cove Hotel',
+    name: 'Sapphire Hotel',
     text: 'Key West, FL',
     price: '\$290',
     rating: '3,8',
@@ -123,5 +123,3 @@ List<ProductModel> favourite = [
     price: '\$211',
   ),
 ];
-
-

@@ -440,7 +440,7 @@ class _DetailScreenState extends State<DetailScreen> {
           width: 50,
           height: 50,
           fit: BoxFit.cover,
-          errorBuilder: (_, __, ___) =>
+          errorBuilder: (context, error, stackTrace) =>
               const CircleAvatar(radius: 25, child: Icon(Icons.person)),
         ),
       ),
@@ -494,7 +494,7 @@ class _DetailScreenState extends State<DetailScreen> {
             itemCount: bestToday.length,
             separatorBuilder: (_, __) => const SizedBox(width: 16),
             itemBuilder: (context, index) => SizedBox(
-              width: MediaQuery.of(context).size.width * 0.85,
+              width: MediaQuery.of(context).size.width * 1,
               child: ItemBest(model: bestToday[index]),
             ),
           ),

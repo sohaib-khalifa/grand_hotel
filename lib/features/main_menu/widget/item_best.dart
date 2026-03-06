@@ -29,7 +29,12 @@ class ItemBest extends StatelessWidget {
               borderRadius: BorderRadius.circular(16),
               child: Hero(
                 tag: model.image,
-                child: Image.asset(model.image, fit: BoxFit.cover, width: 95, height: 95,),
+                child: Image.asset(
+                  model.image,
+                  fit: BoxFit.cover,
+                  width: 95,
+                  height: 95,
+                ),
               ),
             ),
             const SizedBox(width: 12),
@@ -105,12 +110,15 @@ class ItemBest extends StatelessWidget {
                           ),
                           SizedBox(width: 4),
                           const SizedBox(width: 8),
-                          const Text(
-                            '\$199',
-                            style: TextStyle(
-                              color: AppColors.error100,
-                              fontSize: 16,
-                              decoration: TextDecoration.lineThrough,
+                          Padding(
+                            padding: const EdgeInsets.only(right: 8.0),
+                            child: const Text(
+                              '\$199',
+                              style: TextStyle(
+                                color: AppColors.error100,
+                                fontSize: 16,
+                                decoration: TextDecoration.lineThrough,
+                              ),
                             ),
                           ),
                         ],
