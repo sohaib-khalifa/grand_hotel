@@ -1,4 +1,4 @@
-import 'package:grand_hotel/features/main_app/models/booking_item.dart';
+﻿import 'package:grand_hotel/features/main_app/models/booking_item.dart';
 import 'package:grand_hotel/features/main_app/models/chat_item.dart';
 
 const List<BookingItem> bookedBookings = [
@@ -62,6 +62,14 @@ const List<ChatItem> chatItems = [
         'https://image2url.com/r2/default/images/1772581600208-9a0d7a5f-e08c-4d53-bcdc-7f7049a64d68.jpg',
   ),
   ChatItem(
+    name: 'ahmed khaled',
+    message: 'Answer me now !',
+    time: '7:12 AM',
+    unread: 500,
+    avatar:
+        'https://image2url.com/r2/default/images/1772749832078-578e7200-627d-48bd-a1b7-eef24effa743.png',
+  ),
+  ChatItem(
     name: 'Kallalooh',
     message: 'Yes! please take a order',
     time: '9:28 AM',
@@ -102,3 +110,5 @@ const List<ChatItem> chatItems = [
 
 const String profileAvatarUrl =
     'https://image2url.com/r2/default/images/1772581600208-9a0d7a5f-e08c-4d53-bcdc-7f7049a64d68.jpg';
+
+

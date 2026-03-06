@@ -1,4 +1,4 @@
-class BookingItem {
+﻿class BookingItem {
   final String title;
   final String location;
   final int price;

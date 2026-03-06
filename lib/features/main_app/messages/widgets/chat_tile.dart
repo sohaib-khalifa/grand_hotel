@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 import 'package:grand_hotel/features/main_app/models/chat_item.dart';
 import 'package:grand_hotel/features/main_app/utils/image_utils.dart';
 
@@ -29,7 +29,7 @@ class ChatTile extends StatelessWidget {
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                     style: const TextStyle(
-                      fontWeight: FontWeight.bold,
+                      fontWeight: FontWeight.w700,
                       fontSize: 14,
                     ),
                   ),
@@ -38,7 +38,11 @@ class ChatTile extends StatelessWidget {
                     item.message,
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
-                    style: const TextStyle(color: Colors.grey, fontSize: 12),
+                    style: const TextStyle(
+                      color: Colors.grey,
+                      fontSize: 12,
+                      fontWeight: FontWeight.w900,
+                    ),
                   ),
                 ],
               ),
@@ -49,7 +53,11 @@ class ChatTile extends StatelessWidget {
               children: [
                 Text(
                   item.time,
-                  style: const TextStyle(color: Colors.grey, fontSize: 11),
+                  style: const TextStyle(
+                    color: Colors.grey,
+                    fontSize: 11,
+                    fontWeight: FontWeight.w600,
+                  ),
                 ),
                 const SizedBox(height: 6),
                 if (item.unread > 0)

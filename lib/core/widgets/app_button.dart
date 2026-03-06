@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 import 'package:grand_hotel/core/styles/app_color.dart';
 import 'package:grand_hotel/core/styles/app_text_style.dart';
 
@@ -39,13 +39,6 @@ class AppButton extends StatelessWidget {
               color: AppColors.hintStyleColorAppButtom,
               letterSpacing: 0.5,
             ),
-        // const TextStyle(
-        //   fontFamily: AppFonts.inter,
-        //   fontSize: 16,
-        //   fontWeight: FontWeight.w600,
-        //   color: AppColors.white,
-        //   letterSpacing: 0.2,
-        // ),
       ),
     );
   }

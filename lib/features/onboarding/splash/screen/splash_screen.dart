@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 
 class HotelHomeScreen extends StatefulWidget {
   const HotelHomeScreen({super.key});
@@ -21,7 +21,6 @@ class _HotelHomeScreenState extends State<HotelHomeScreen> {
             children: [
               const SizedBox(height: 10),
 
-              /// HEADER
               Row(
                 children: [
                   CircleAvatar(
@@ -75,7 +74,6 @@ class _HotelHomeScreenState extends State<HotelHomeScreen> {
 
               const SizedBox(height: 20),
 
-              /// MOST POPULAR TITLE
               Row(
                 children: const [
                   Text(
@@ -89,7 +87,6 @@ class _HotelHomeScreenState extends State<HotelHomeScreen> {
 
               const SizedBox(height: 12),
 
-              /// HORIZONTAL LIST
               SizedBox(
                 height: 200,
                 child: ListView(
@@ -114,7 +111,6 @@ class _HotelHomeScreenState extends State<HotelHomeScreen> {
 
               const SizedBox(height: 20),
 
-              /// RECOMMENDED TITLE
               Row(
                 children: const [
                   Text(
@@ -128,7 +124,6 @@ class _HotelHomeScreenState extends State<HotelHomeScreen> {
 
               const SizedBox(height: 15),
 
-              /// LIST TILES
               recommendedTile(
                 image:
                     "https://images.unsplash.com/photo-1501117716987-c8e2a40d6f9b",
@@ -149,7 +144,6 @@ class _HotelHomeScreenState extends State<HotelHomeScreen> {
         ),
       ),
 
-      /// BOTTOM NAV
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: navIndex,
         onTap: (i) {

@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 import 'package:grand_hotel/core/constants/app_fonts.dart';
 import 'package:grand_hotel/core/styles/app_color.dart';
 import 'package:grand_hotel/core/styles/app_text_style.dart';
@@ -47,7 +47,7 @@ class AppInput extends StatelessWidget {
       validator: validator,
       style: const TextStyle(
         fontFamily: AppFonts.inter,
-        fontSize: 14,
+        fontSize: 13,
         fontWeight: FontWeight.w400,
         color: AppColors.textPrimary,
       ),

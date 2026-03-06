@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 
 class MainAppColors {
   static const Color background = Color(0xfff5f6fa);
