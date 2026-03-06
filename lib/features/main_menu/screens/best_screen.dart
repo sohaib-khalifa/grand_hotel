@@ -51,7 +51,7 @@ class BestScreen extends StatelessWidget {
             itemCount: bestToday.length,
             itemBuilder: (context, index) {
               return SizedBox(
-                width: MediaQuery.of(context).size.width * 0.85,
+                width: MediaQuery.of(context).size.width * 1,
                 child: ItemBest(model: bestToday[index]),
               );
             },

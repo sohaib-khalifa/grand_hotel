@@ -137,7 +137,7 @@ class _FavouriteScreenState extends State<FavouriteScreen> {
                   crossAxisCount: 2,
                   mainAxisSpacing: 15,
                   crossAxisSpacing: 15,
-                  childAspectRatio: 0.62,
+                  childAspectRatio: 0.58,
                 ),
                 itemBuilder: (context, index) {
                   return ItemFavourite(model: favourite[index]);
